@@ -1,0 +1,24 @@
+﻿<div class="main-container--login">
+      <div class="content-width--login">
+        <h1><a href="../top/"><img src="/assets/img/common/logo_login.png" alt="カイトリ"></a></h1>
+        <div class="login">
+          <div class="login__content">
+            <p class="login__sub-title">カイトリのアカウントをお持ちでない方はこちら</p><a class="btn btn--login" href="../login/signup.html">新規登録</a>
+          </div>
+          <div class="login__border"></div>
+          <p class="login__sub-title">アカウントをお持ちの方はログイン方法を選んでください</p>
+          <div class="login__content"><a class="btn btn--fb btn--login u-mb-lg" href="../top/"><i class="icon-facebook icon-lg"></i>Facebookでログイン</a><a class="btn btn--tw btn--login" href="../top/"><i class="icon-twitter icon-lg"></i>Twitterでログイン</a></div>
+          <form class="login__content"  (ngSubmit)="login(loginForm.value)" #loginForm="ngForm" novalidate>
+            <div class="login-form"><i class="icon-envelope"></i>
+              <input name="email"  (ngModel)="loginForm.email" required placeholder="メールアドレス">
+            </div>
+            <div class="login-form"><i class="icon-key icon-lg"></i>
+              <input name="password" (ngModel)="loginForm.password" required placeholder="パスワード">
+            </div>
+            <div class="login__content">
+              <button [disabled]="loading" class="btn btn--login" type="submit">ログイン</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>

@@ -1,8 +1,8 @@
 ﻿import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home/index';
-import { LoginComponent } from './login/index';
-import { RegisterComponent } from './register/index';
+import { HomeComponent } from './component/home/index';
+import { LoginComponent } from './component/login/index';
+import { RegisterComponent } from './component/register/index';
 import { AuthGuard } from './_guards/index';
 
 const appRoutes: Routes = [
